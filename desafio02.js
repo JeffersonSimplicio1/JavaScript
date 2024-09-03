@@ -19,10 +19,10 @@ const tipoCombustivel = 'Gasolina';
 
 if (tipoCombustivel === 'Etanol') {
     let valorTotalGasto = (distancia / kmPorLitro) * valorEtanol
-    console.log('O valor total gasto na viagem com o combustivel foi de: ', valorTotalGasto)
+    console.log('O valor total gasto na viagem com o combustivel foi de: ', valorTotalGasto).toFixed(2)
 } else if (tipoCombustivel === 'Gasolina'){
     let valorTotalGasto = (distancia / kmPorLitro) * valorGasolina
-    console.log('O valor total gasto na viagem com o combustivel foi de: ', valorTotalGasto)
+    console.log('O valor total gasto na viagem com o combustivel foi de: ', valorTotalGasto.toFixed(2))
 
 }
 
