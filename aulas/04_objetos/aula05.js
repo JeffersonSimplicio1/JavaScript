@@ -1,36 +1,29 @@
-//Aprendendo sobre objetos
-// objetos é uma coleção de valores que são declarados por {}
+const primeiraPessoa = {
+    nome: "Jefferson",
+    idade: 30,
+    profissao: "Mecânico",
 
-const pessoa01 = {
-  nome: "Jefferson",
-  idade: 30,
-  curso: "ADS",
-  estadoCivil: "Casado",
-  numeroDeFilhos: 1,
-  atualEmprego: "Tecnico Automotivo",
-};
+    titulo01: function(){
+        console.log(this.nome + ' têm ' + this.idade + ' anos de idade e trabalha como ' + this.profissao)
 
-console.log(pessoa01);
+    }
 
-console.log("-------------------");
+}
 
-console.log(
-  "Nome do aluno é : " +
-    pessoa01.nome +
-    ", " +
-    pessoa01.idade +
-    " anos de idade " +
-    ", cursando o tecnologo em " +
-    pessoa01.curso +
-    " Possui " +
-    pessoa01.numeroDeFilhos +
-    " filho."
-);
+primeiraPessoa.titulo01();
 
-//incrementando valor ao objeto
-pessoa01.altura = 1.59;
-console.log(pessoa01);
+const segundaPessoa = {
+    nome: "Regina",
+    idade: 29,
+    profissao: "Tecnica em enfermagem",
 
-//deletando valor do objeto
-delete pessoa01.numeroDeFilhos;
-console.log(pessoa01);
+    titulo02:function(){
+        console.log('Sua esposa' + this.nome + ', tem ' + this.idade + ' anos de idade e trabalha como ' + this.profissao);
+
+    }
+
+}
+
+segundaPessoa.titulo02();
+primeiraPessoa['idade'] = 'teste';
+primeiraPessoa.titulo01();
