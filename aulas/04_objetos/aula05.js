@@ -1,29 +1,21 @@
-const primeiraPessoa = {
-    nome: "Jefferson",
-    idade: 30,
-    profissao: "Mecânico",
+// function calcularArea(raio) {
+//   const pi = 3.14;
+//   const areaCirculo = pi * Math.pow(raio, 2);
+//   return areaCirculo;
+// }
+// const areaCalculada = calcularArea(); 
+// console.log(calcularArea(10));
 
-    titulo01: function(){
-        console.log(this.nome + ' têm ' + this.idade + ' anos de idade e trabalha como ' + this.profissao)
 
+const carro = {
+    marca:'Jeep',
+    modelo: 'T270',
+    nome: 'Compass',
+    ano: 2024,
+
+    descricao: function(){
+        console.log(`comprei um carro da marca ${this.marca} modelo: ${this.modelo}`)
     }
-
 }
 
-primeiraPessoa.titulo01();
-
-const segundaPessoa = {
-    nome: "Regina",
-    idade: 29,
-    profissao: "Tecnica em enfermagem",
-
-    titulo02:function(){
-        console.log('Sua esposa' + this.nome + ', tem ' + this.idade + ' anos de idade e trabalha como ' + this.profissao);
-
-    }
-
-}
-
-segundaPessoa.titulo02();
-primeiraPessoa['idade'] = 'teste';
-primeiraPessoa.titulo01();
+carro.descricao();
