@@ -11,4 +11,4 @@ function print(texto){
     console.log(texto)
 }
 
-module.exportes = {gets, print};
+module.exports = {gets, print};
